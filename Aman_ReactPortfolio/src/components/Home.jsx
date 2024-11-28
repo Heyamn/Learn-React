@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Home = () => {
+  const redirectToLink = (url) => {
+    window.location.href = url;
+  };
+
+  // useEffect(() => {
+  //   alert("Welcome To Aman's Portfolio")
+  // },[])
+
   return (
     <>
       <div className=' grid grid-cols-2 gap-1'>
@@ -18,10 +26,15 @@ const Home = () => {
             </button>
             </div>
             <div className=' mr-[150px]'>
-            <button class="bg-transparent hover:bg-gray-700 text-gray-700 font-semibold hover:text-white py-2 px-3 border border-gray-500 hover:border-transparent rounded-full font-serif">
+            <button class="bg-transparent hover:bg-gray-700 text-gray-700 font-semibold hover:text-white py-2 px-3 border border-gray-500 hover:border-transparent rounded-full font-serif"
+            onClick={()=>redirectToLink('https://github.com/heyamn')}>
                 Aman's Github
             </button>
             </div>
+          </div>
+          <div className='flex mt-6 ml-[244px]'>
+              <img className='h-10 w-15' src='/src/assets/githubLogo.png'  onClick={()=>redirectToLink('https://github.com/heyamn')}/>
+              <img className='h-[43px] w-15' src='/src/assets/linkedInLogo.png' onClick={()=>redirectToLink('https://www.linkedin.com/in/heyamn/')}/>
           </div>
         </div>
       </div>
