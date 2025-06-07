@@ -1,10 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Project from './components/Project'
+import { Footer } from './components/Footer'
+import { Outlet } from 'react-router-dom'
 
 
 function App() {
@@ -12,8 +11,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
-      {/* <Project /> */}
+      <Outlet />
+      <Footer />
     </>
   )
 }

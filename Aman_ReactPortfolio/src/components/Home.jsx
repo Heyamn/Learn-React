@@ -5,9 +5,6 @@ const Home = () => {
     window.location.href = url;
   };
 
-  // useEffect(() => {
-  //   alert("Welcome To Aman's Portfolio")
-  // },[])
 
   return (
     <>
