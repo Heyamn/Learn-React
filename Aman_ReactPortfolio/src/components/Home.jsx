@@ -18,7 +18,8 @@ const Home = () => {
           <h1 className=' text-gray-700 font-mono mt-3 text-2xl font-bold'>Frontend Developer</h1>
           <div className='grid grid-cols-2 mt-10 gap-0'>
             <div className=' ml-[100px]'>
-            <button class="bg-transparent hover:bg-gray-700 text-gray-700 font-semibold hover:text-white py-2 px-3 border border-gray-500 hover:border-transparent rounded-full font-serif">
+            <button class="bg-transparent hover:bg-gray-700 text-gray-700 font-semibold hover:text-white py-2 px-3 border border-gray-500 hover:border-transparent rounded-full font-serif"
+            onClick={()=>redirectToLink('https://drive.google.com/file/d/1UstIKpJaKktDYijhmrCjXzCajgr_k5x1/view?usp=sharing')}>
                 Download CV
             </button>
             </div>

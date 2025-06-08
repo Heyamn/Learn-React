@@ -25,6 +25,7 @@ const handleProjectThreeLiveLinkClick = () => {
 const Project = () => {
   return (
     <>
+    <div className=' pb-32'>
         <div className=' text-gray-800 mt-20 text-4xl'>My Projects</div>
         
         <div className='main flex gap-10  mt-20'>
@@ -77,6 +78,7 @@ const Project = () => {
                 </div>
             </div>
         </div>
+    </div>
     </>
     
   )
