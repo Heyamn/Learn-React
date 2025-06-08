@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <div className=' grid grid-cols-2 gap-1'>
         <div>
-          <img className=' h-[500px] w-[350px] m-[100px] ml-[200px]' src='src/assets/amanLogo.svg'/>
+          <img className=' h-[500px] w-[350px] m-[100px] ml-[200px]' src='/public/amanLogo.svg'/>
         </div>
         <div className=' mt-[230px]'>
           <p className=' text-gray-600 font-serif text-sm'>Hello, I'm</p>
@@ -30,9 +30,11 @@ const Home = () => {
             </button>
             </div>
           </div>
-          <div className='flex mt-6 ml-[244px]'>
-              <img className='h-10 w-15' src='/src/assets/githubLogo.png'  onClick={()=>redirectToLink('https://github.com/heyamn')}/>
-              <img className='h-[43px] w-15' src='/src/assets/linkedInLogo.png' onClick={()=>redirectToLink('https://www.linkedin.com/in/heyamn/')}/>
+          <div className="flex gap-4 mt-4 ml-56">
+            <i className="fab fa-github text-4xl cursor-pointer hover:text-gray-600 bg-gray-950 w-10 h-10 mt-1"
+              onClick={() => redirectToLink('https://github.com/heyamn')}></i>
+            <i className="fab fa-linkedin text-[2.75rem] cursor-pointer text-blue-700 hover:text-blue-500 ml-10"
+              onClick={() => redirectToLink('https://www.linkedin.com/in/heyamn/')}></i>
           </div>
         </div>
       </div>

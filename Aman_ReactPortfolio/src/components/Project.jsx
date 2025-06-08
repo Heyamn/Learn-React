@@ -7,9 +7,9 @@ const handleProjectOneGithubLinkClick = () => {
 const handleProjectOneLiveLinkClick = () => {
     window.location.href = 'https://booksy.onrender.com/';
 };
-// const handleProjectTwoGithubLinkClick = () => {
-//     window.location.href = 'https://github.com/Heyamn/Booksy';
-// };
+const handleProjectTwoGithubLinkClick = () => {
+    window.location.href = 'https://github.com/Heyamn/Learn-React/tree/main/Aman_ReactPortfolio';
+};
 
 // const handleProjectTwoLiveLinkClick = () => {
 //     window.location.href = 'https://booksy.onrender.com/';
@@ -31,7 +31,7 @@ const Project = () => {
         <div className='main flex gap-10  mt-20'>
             <div className=' text-black border rounded-md h-[360px] '>
                 <div className=' w-96'>
-                    <img  className=' w-72 ml-10 mt-8 border rounded-xl border-solid border-gray-950 ' src='/src/assets/Booksy.png' />
+                    <img  className=' w-72 ml-10 mt-8 border rounded-xl border-solid border-gray-950 ' src='/public/Booksy.png' />
                 </div>
                 <div className=' mt-4'>
                     <p className=' text-xl'>Project one</p>
@@ -47,14 +47,14 @@ const Project = () => {
             </div>
             <div className=' text-black border rounded-md h-[360px]'>
                 <div className=' w-96'>
-                    <img className='w-72 ml-12 mt-8 border rounded-xl border-solid border-gray-950' src='/src/assets/Portfolio.png' />
+                    <img className='w-72 ml-12 mt-8 border rounded-xl border-solid border-gray-950' src='/public/Portfolio.png' />
                 </div>
                 <div className=' mt-4'>
                     <p className=' text-xl'>Project Two</p>
                 </div>
                 <div className=' flex gap-10 mt-10 ml-20'>
                     <div>
-                        <button className='bg-transparent hover:bg-gray-500 text-black-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded'>Github</button>
+                        <button onClick={handleProjectTwoGithubLinkClick} className='bg-transparent hover:bg-gray-500 text-black-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded'>Github</button>
                     </div>
                     <div>
                         <button className='bg-transparent hover:bg-gray-500 text-black-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded'>Live Demo</button>
@@ -63,7 +63,7 @@ const Project = () => {
             </div>
             <div className=' text-black border rounded-md h-[360px]'>
             <div className=' w-96'>
-                    <img className=' w-80 ml-8 mt-8 border rounded-xl border-solid border-gray-950' src='/src/assets/ChatApp.png' />
+                    <img className=' w-80 ml-8 mt-8 border rounded-xl border-solid border-gray-950' src='/public/ChatApp.png' />
                 </div>
                 <div className=' mt-4'>
                 <p className=' text-xl'>Project Three</p>
