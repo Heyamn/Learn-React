@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import myImage from '../assets/amanLogo.svg';
 
 const Home = () => {
   const redirectToLink = (url) => {
@@ -10,7 +11,7 @@ const Home = () => {
     <>
       <div className=' grid grid-cols-2 gap-1'>
         <div>
-          <img className=' h-[500px] w-[350px] m-[100px] ml-[200px]' src='/public/amanLogo.svg'/>
+          <img className=' h-[500px] w-[350px] m-[100px] ml-[200px]' src={myImage} alt="My Logo"/>
         </div>
         <div className=' mt-[230px]'>
           <p className=' text-gray-600 font-serif text-sm'>Hello, I'm</p>

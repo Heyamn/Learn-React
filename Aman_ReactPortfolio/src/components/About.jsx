@@ -1,4 +1,6 @@
 import React from 'react'
+import myImage from '../assets/aman.jpg';
+
 
 
 const About = () => {
@@ -7,8 +9,8 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8 p-6 md:p-12 bg-white">
       <div className="flex-shrink-0 mt-48 ml-2">
         <img
-          src="/src/assets/aman.jpg" 
-          alt="Profile"
+          src={myImage} 
+          alt="My Image"
           className="w-52 h-52 rounded-full border-4 border-gray-300 dark:border-gray-600 object-cover"
         />
       </div>

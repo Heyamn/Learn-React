@@ -1,4 +1,7 @@
 import React from 'react'
+import booksyImg from '../assets/Booksy.png';
+import chatAppImg from '../assets/ChatApp.png';
+import portfolioImg from '../assets/Portfolio.png';
 
 const handleProjectOneGithubLinkClick = () => {
     window.location.href = 'https://github.com/Heyamn/Booksy';
@@ -31,7 +34,7 @@ const Project = () => {
         <div className='main flex gap-10  mt-20'>
             <div className=' text-black border rounded-md h-[360px] '>
                 <div className=' w-96'>
-                    <img  className=' w-72 ml-10 mt-8 border rounded-xl border-solid border-gray-950 ' src='/public/Booksy.png' />
+                    <img  className=' w-72 ml-10 mt-8 border rounded-xl border-solid border-gray-950 ' src={booksyImg} />
                 </div>
                 <div className=' mt-4'>
                     <p className=' text-xl'>Project one</p>
@@ -47,7 +50,7 @@ const Project = () => {
             </div>
             <div className=' text-black border rounded-md h-[360px]'>
                 <div className=' w-96'>
-                    <img className='w-72 ml-12 mt-8 border rounded-xl border-solid border-gray-950' src='/public/Portfolio.png' />
+                    <img className='w-72 ml-12 mt-8 border rounded-xl border-solid border-gray-950' src={portfolioImg} />
                 </div>
                 <div className=' mt-4'>
                     <p className=' text-xl'>Project Two</p>
@@ -63,7 +66,7 @@ const Project = () => {
             </div>
             <div className=' text-black border rounded-md h-[360px]'>
             <div className=' w-96'>
-                    <img className=' w-80 ml-8 mt-8 border rounded-xl border-solid border-gray-950' src='/public/ChatApp.png' />
+                    <img className=' w-80 ml-8 mt-8 border rounded-xl border-solid border-gray-950' src={chatAppImg} />
                 </div>
                 <div className=' mt-4'>
                 <p className=' text-xl'>Project Three</p>
