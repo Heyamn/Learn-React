@@ -11,9 +11,9 @@ const handleProjectTwoGithubLinkClick = () => {
     window.location.href = 'https://github.com/Heyamn/Learn-React/tree/main/Aman_ReactPortfolio';
 };
 
-// const handleProjectTwoLiveLinkClick = () => {
-//     window.location.href = 'https://booksy.onrender.com/';
-// };
+const handleProjectTwoLiveLinkClick = () => {
+    window.location.href = 'https://amantailor-portfolio.netlify.app/';
+};
 const handleProjectThreeGithubLinkClick = () => {
     window.location.href = 'https://github.com/Heyamn/Chat-App';
 };
@@ -57,7 +57,7 @@ const Project = () => {
                         <button onClick={handleProjectTwoGithubLinkClick} className='bg-transparent hover:bg-gray-500 text-black-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded'>Github</button>
                     </div>
                     <div>
-                        <button className='bg-transparent hover:bg-gray-500 text-black-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded'>Live Demo</button>
+                        <button onClick={handleProjectTwoLiveLinkClick} className='bg-transparent hover:bg-gray-500 text-black-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded'>Live Demo</button>
                     </div>
                 </div>
             </div>
